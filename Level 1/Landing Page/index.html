@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="./assets/images/logo.png"></a>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">WHAT'S NEW</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </header>
+        <div class="content">
+          <div class="textbox">
+            <h2>It's not just Cofee<br>It's <span>Starbucks</span></h2>
+            <h1>Let the Festivities Begin</h1>
+
+            <p> Discover what makes Starbucks unique—from our commitment to human connection and quality coffee to our welcoming cafés and delicious products you can enjoy at home.
+                Experience the magic of Starbucks holiday drinks around the world
+                The holidays have arrived at Starbucks, with colorful holiday cups and the return of Starbucks beloved seasonal beverages.   
+            </p>
+            <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="./assets/images/img1.png" class="starbucks" alt="">  
+            </div>
+              
+        </div>
+            <ul class="thumb">
+                <li><img src="./assets/images/thumb1.png" onclick="imgSlider('./assets/images/img1.png');changeCircleColor('#017143')"></li>
+                <li><img src="./assets/images/thumb2.png" onclick="imgSlider('./assets/images/img2.png');changeCircleColor('#eb7495')"></li>
+                <li><img src="./assets/images/thumb3.png" onclick="imgSlider('./assets/images/img3.png');changeCircleColor('#d752b1')"></li>
+                <li><img src="./assets/images/thumb4.png" onclick="imgSlider('./assets/images/img4.png');changeCircleColor('#AD8B65')"></li>
+                <li><img src="./assets/images/thumb5.png" onclick="imgSlider('./assets/images/img5.png');changeCircleColor('#2D251B')"></li>
+                
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><img src="./assets/images/facebook.png"></a></li>
+                <li><a href="#"><img src="./assets/images/instagram.png"></a></li>
+                <li><a href="#"><img src="./assets/images/twitter.png"></a></li>    
+            </ul>
+    </section>
+    <script  type="text/javascript">
+        function imgSlider(anything) {
+        document.querySelector('.starbucks').scr=anything;
+     }
+        function changeCircleColor(color) {
+            const circle= document.querySelector('.circle');
+            circle.style.backgroundColor= color;
+        }
+
+    </script>
+
+</body>
+</html>
